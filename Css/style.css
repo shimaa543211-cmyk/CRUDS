@@ -1,0 +1,273 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6e3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  font-family: cursive;
+  text-shadow: 2px 2px #ffcc00;
+}
+
+h2 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.form {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c9302c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+a.visit-btn {
+  background-color: #5cb85c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a.visit-btn:hover {
+  background-color: #4cae4c;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+hr {
+  border: none;
+  border-top: 2px dotted #aaa; /* هنا خليته منقط */
+  margin: 20px 0;
+}
+.container h1 {
+  font-family: 'Georgia', serif;
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  z-index: 1; /* عشان الكلمة تبان فوق */
+}
+
+/* الخط الأصفر تحت النص */
+.container h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px; /* يحدد ارتفاع الهايلات */
+  width: 100%;
+  height: 18px; /* سُمك الهايلات */
+  background: #FEC260; /* اللون الأصفر */
+  z-index: -1; /* يخلي اللون ورا النص */
+}
+
+/* تحديد النص */
+::selection {
+  background: #FEC260;
+  color: white;
+}
+.alert-box {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  display: none; /* مخفي في البداية */
+}
+/* خلفية شفافة */
+.popup {
+  display: none; /* مخفي في البداية */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+/* محتوى البوكس */
+.popup-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* العنوان */
+.popup-content h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* النقط */
+.popup-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popup-content li {
+  margin: 8px 0;
+  color: #c0392b;
+  font-size: 14px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6e3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  font-family: cursive;
+  text-shadow: 2px 2px #ffcc00;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c9302c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.visit-btn {
+  background-color: #5cb85c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.visit-btn:hover {
+  background-color: #4cae4c;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
